@@ -1,0 +1,70 @@
+.footer {
+	padding: 65px 0 75px;
+	background-color: #aa15b6;
+	@media (max-width: 980px) { padding: 40px 0;}
+	@media (max-width: 768px) { padding: 20px 0;}
+}
+
+.footer-block {
+	display: flex;
+	@media (max-width: 576px) { flex-direction: column;}
+	&__info {
+		flex: 0 5 50.8%;
+		@media (max-width: 768px) { flex: 0 1 35%; margin-right: 40px;}
+		@media (max-width: 576px) { flex: 0 1 100%; margin: 0 0 30px;}
+	}
+	&__title { 
+		font-size: 25px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__text { 
+		line-height: 29px;
+		width: 325px;
+		@media (max-width: 768px) { width: 100%;}
+	}
+	&__contacts {
+		flex: 0 1 49.2%;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 768px) { flex: 0 1 65%;}
+		@media (max-width: 576px) { flex: 0 1 100%;}
+		@media (max-width: 480px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	&__section { 
+		flex: 0 1 33.333%;
+		@media (max-width: 480px) { 
+			flex: 0 1 50%; 
+			&:not(:last-child) { margin-bottom: 20px;}
+		}
+	}
+	&__name {
+		text-transform: uppercase;
+		margin-bottom: 44px;
+		font-weight: 700;
+		font-size: 20.8px;
+		@media (max-width: 576px) { margin-bottom: 10px;}
+	}
+	&__navigation {
+		list-style: none;
+	}
+	&__link {
+		font-weight: 700;
+		font-size: 20.8px;
+		text-decoration: none;
+		color: #fff;
+		&:hover {
+			text-decoration: underline;
+			text-shadow: 5px -5px 5px #5f0375;
+		} 
+		&:active, &:focus {
+			color: #5f0375;
+			text-decoration: underline;
+			text-shadow: 5px -5px 5px #5f0375;
+		}
+		@media (max-width: 576px) { font-weight: 400;}
+	}
+}

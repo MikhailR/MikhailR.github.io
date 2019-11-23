@@ -1,0 +1,169 @@
+.shop-priority {
+	padding: 90px 0 130px;
+	text-align: center;
+	@media (max-width: 980px) {	padding: 50px 0 10px;}
+	@media (max-width: 576px) {	padding-top: 20px;}
+	&__text {
+		margin: 37px 0 112px;
+		padding: 0 106px;
+		@media (max-width: 980px) {
+			margin: 20px 0 40px;
+			padding: 0;
+		}
+		@media (max-width: 576px) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+		@media (max-width: 480px) {	margin: 10px 0 20px;}
+	}
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	&__item {
+		flex-basis: 32%;
+		padding: 60px 70px;
+		background-color: #aa15b6;
+		text-align: left;
+		opacity: 0;
+		transition-duration: 0.5s;
+		@media (max-width: 980px) {	padding: 20px;}
+		@media (max-width: 768px) {
+			flex-basis: 45%;;
+			&:not(:last-child) { margin-right: 20px; margin-bottom: 20px;}
+		}
+		@media (max-width: 480px) {
+			flex-basis: 80%;
+			&:not(:last-child) { margin-right: 0;}
+		}
+		&:hover { box-shadow: 0 0 30px #aa15b6;}
+	}
+	.shopItemRotate {
+	    -webkit-backface-visibility: visible;
+	    backface-visibility: visible;
+	    -webkit-animation-name: cardsRotate;
+	    animation-name: cardsRotate;
+	    animation-duration: 2s;
+	}
+	&__company {
+		font-size: 16.7px;
+		font-weight: 700;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+	&__review {
+		font-size: 16.7px;
+		line-height: 20px;
+		margin: 55px 0 45px; 
+		@media (max-width: 576px) {
+			font-size: 14px;
+			line-height: 20px;
+			margin: 20px 0;
+		}
+	}
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (max-width: 480px) { justify-content: flex-start;}
+	}
+	&__image {
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		background-color: transparent;
+		box-sizing: content-box;
+		border: 10px solid #fff;
+		@media (max-width: 576px) { width: 30px; height: 30px;}
+		@media (max-width: 480px) {	margin-right: 20px;}
+	}
+	&__author {
+		flex-basis: 60.3%;
+		font-size: 14.6px;
+		font-weight: 700;
+		line-height: 18px;
+		text-transform: uppercase;
+	}
+	&__position {
+		font-weight: 400;
+		text-transform: none;
+		display: block;
+	}
+}
+.shop-back img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+@-webkit-keyframes cardsRotate {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    opacity: 1;
+  }
+}
+
+@keyframes cardsRotate {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    opacity: 1;
+  }
+}

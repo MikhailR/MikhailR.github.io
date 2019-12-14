@@ -121,14 +121,14 @@ body {
 .modal {
   display: none;
   position: fixed;
-  top: 0%;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 20; }
+  z-index: 10; }
   .modal__content {
     position: fixed;
     left: 50%;
@@ -194,7 +194,9 @@ body {
         -ms-transform: translate(-50%, -50%) rotate(135deg);
         transform: translate(-50%, -50%) rotate(135deg); }
   .modal__image {
-    overflow: auto; }
+    overflow: auto;
+    z-index: 20;
+    position: relative; }
     .modal__image img {
       display: block;
       width: auto;

@@ -206,14 +206,16 @@ $(document).ready(function(){
 		$('.modal__image img').attr('src',''+source+'');
 		$('body').css('overflow','hidden');
 	});
-	$('.modal').click(function() {
-		$('.modal').fadeOut(300);
-		$('body').css('overflow','auto');
-	});
+	// $('.modal').click(function() {
+	// 	$('.modal').fadeOut(300);
+	// 	$('body').css('overflow','auto');
+	// 	$('.modal__image img').attr('src','');
+	// });
 	$('.modal__close').click(function(e) {
 		e.preventDefault();
 		$('.modal').fadeOut(300);
 		$('body').css('overflow','auto');
+		$('.modal__image img').attr('src','');
 	});
 
   /*Закрытие модального окна, всплывающего на карте*/

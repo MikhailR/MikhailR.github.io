@@ -1,0 +1,140 @@
+/*Секция о рисках и аналитике*/ 
+.risk {
+	position: relative;
+	/*Блок с картинкой-фоном*/ 
+	&__image {
+		width: 100%;
+		height: 1040px;
+		position: relative;
+		overflow: hidden;
+		img {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 100%;
+			width: auto;
+			min-width: 100%;
+		}
+		@media (max-width: 1550px) {
+			height: 800px;
+			img { 
+				transform: translate(-100px,-50%);
+				min-width: 110%;
+			}
+		}
+		@media (max-width: 992px) { 
+			height: 700px;
+			img {
+				height: 100%;
+				width: auto;
+				min-width: 100%;
+			}
+		}
+		@media (max-width: 768px) {	display: none;}
+	}
+	/*Блок с текстом*/
+	&__info {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 141px 0 81px 689px;
+		color: #ffffff;
+		@media (max-width: 1550px) { padding: 50px 0 20px 350px;}
+		@media (max-width: 1200px) { padding-left: 0;}
+		@media (max-width: 992px) { padding-top: 20px;}
+		@media (max-width: 768px) {
+			position: static;
+			background-color: #2C0C10;
+		}
+	}
+	/*Заголовок*/
+	&__title {
+		width: 826px;
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 1.2;
+		letter-spacing: -1px;
+		@media (max-width: 1200px) { width: 100%; text-align: center;}
+		@media (max-width: 992px) { font-size: 48px;}
+		@media (max-width: 768px) { font-size: 36px;}
+	}
+	&__text {
+		width: 445px;
+		margin: -50px 0 120px 380px;
+		font-size: 24px;
+		line-height: 1.4;
+		letter-spacing: 0.02em;
+		@media (max-width: 1550px) { margin-bottom: 50px;}
+		@media (max-width: 1200px) { margin: 20px 0 50px auto;}
+		@media (max-width: 992px) { font-size: 20px;}
+		@media (max-width: 768px) { 
+			margin-left: 0; 
+			width: 100%; 
+			padding: 0 15px;
+			font-size: 18px;
+		}
+	}
+	/*Элементы списка*/
+	&__analitic {
+		margin-left: 380px;
+		width: 445px;
+		margin-bottom: 60px;
+		position: relative;
+		/*Иконка возле элементов списка*/
+		&::before {
+			content: '';
+			width: 169px;
+			height: 169px;
+			border-radius: 50%;
+			border: 20px solid rgba(255,255,255,0.05);
+			position: absolute;
+			left: 0;
+			top: 0;
+			transform: translate(-90%,-20%);
+			@media (max-width: 992px) {
+				width: 100px;
+				height: 100px;
+				border-width: 10px;
+				left: 100%;
+				transform: translate(-120%,-70%);
+			}
+			@media (max-width: 768px) { 
+				left: 0;
+				top: 0;
+				transform: translate(20px,0);
+			}
+		}
+		&:first-of-type::before { 
+			background: url('../img/icon-risk1.svg') center no-repeat;
+			@media (max-width: 992px) { background-size: 50%;}
+		}
+		&:last-of-type::before { 
+			background: url('../img/icon-risk2.svg') center no-repeat;
+			@media (max-width: 992px) { background-size: 50%;}
+		}
+		@media (max-width: 1200px) { margin: 0 0 40px auto; }
+		@media (max-width: 992px) {	margin-top: 100px;}
+		@media (max-width: 768px) { 
+			margin-top: 20px; 
+			padding: 0 20px 0 130px; 
+			width: 100%;
+		}
+	}
+	/*Название элемента списка*/
+	&__name {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1.1;
+		margin-bottom: 16px;
+		@media (max-width: 992px) { font-size: 22px;}
+	}
+	/*Описание элемента списка*/
+	&__description {
+		font-size: 18px;
+		line-height: 1.4;
+		opacity: 0.7;
+	}
+}

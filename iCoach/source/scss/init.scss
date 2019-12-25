@@ -1,0 +1,91 @@
+/*Подключение шрифтов*/ 
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('../fonts/BebasNeueRegular.eot');
+	src: local('☺'), url('../fonts/BebasNeueRegular.woff') format('woff'), url('../fonts/BebasNeueRegular.ttf') format('truetype'), url('../fonts/BebasNeueRegular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/helveticaneuecyr-light.eot');
+	src: local('☺'), url('../fonts/helveticaneuecyr-light.woff') format('woff'), url('../fonts/helveticaneuecyr-light.ttf') format('truetype'), url('../fonts/helveticaneuecyr-light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/helveticaneuecyr-roman.eot');
+	src: local('☺'), url('../fonts/helveticaneuecyr-roman.woff') format('woff'), url('../fonts/helveticaneuecyr-roman.ttf') format('truetype'), url('../fonts/helveticaneuecyr-roman.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+	src: local('☺'), url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/helveticaneuecyr-bold.eot');
+	src: local('☺'), url('../fonts/helveticaneuecyr-bold.woff') format('woff'), url('../fonts/helveticaneuecyr-bold.ttf') format('truetype'), url('../fonts/helveticaneuecyr-bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../fonts/HelveticaNeueCyr-Black.eot');
+	src: local('☺'), url('../fonts/HelveticaNeueCyr-Black.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Black.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Black.svg') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+/*--------------------------------------------------------------------------------------*/ 
+
+/*Задание стилей для всего документа и обёрток*/ 
+body {
+	font-family: 'HelveticaNeueCyr';
+	font-size: 12px;
+	font-weight: 400;
+	color: #292121;
+}
+
+.container {
+	max-width: 100%;
+	min-width: 320px;
+	background-color: #fff;
+	overflow-x: hidden;
+	position: relative; 
+}
+
+.wrap {
+	max-width: 1140px;
+	min-width: 320px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/*Элемент точка-с-обводкой (общие свойства)*/ 
+.point {
+	position: absolute;
+	font-size: 0px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	span {
+		border-radius: 50%;
+		background-color: #D90916;
+	}
+}
+
+.text-red { color: #D90916; font-weight: 700;}
+.text-bold { font-weight: 700;}
+.text-gray { color: #828282;}
+
+/*Задание видимости изображений для "ленвой загрузки"*/ 
+img { opacity: 1; transition: opacity 0.3s;} 
+img[data-src] { opacity: 0;}

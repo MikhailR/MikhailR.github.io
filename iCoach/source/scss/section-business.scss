@@ -1,0 +1,106 @@
+/*Блок "Бизнес неплохо работает"*/
+.business {
+	padding: 170px 0 140px;
+	@media (max-width: 992px) { padding: 70px 0;}
+	&__content {
+		display: flex;
+		justify-content: flex-end;
+		@media (max-width: 992px) { flex-direction: column;}
+	}
+	/*Левая колонка - текст + элемент-точка*/
+	&__left {
+		position: relative;
+		z-index: 10;
+		@media (max-width: 992px) { margin-left: 130px; }
+		@media (max-width: 576px) {
+			margin-left: 10px;
+			padding-top: 50px;
+		}
+	}
+	/*Заголовок*/
+	&__title {
+		max-width: 500px;
+		font-weight: 900;
+		font-size: 72px;
+		line-height: 1;
+		margin-bottom: 35px;
+		z-index: 10;
+		position: relative;
+		@media (max-width: 1200px) { font-size: 60px; max-width: 400px;}
+		@media (max-width: 576px) { 
+			font-size: 48px;
+			line-height: 48px;
+			max-width: 100%;
+		}
+		@media (max-width: 320px) { 
+			font-size: 40px;
+		}
+	}
+	/*Текст под заголовком*/
+	&__text {
+		width: 350px;
+		font-size: 26px;
+		line-height: 36px;
+		color: #828282;
+		@media (max-width: 576px) { width: 100%;}
+	}
+	/*Элемент-точка для этого блока*/
+	&__point {
+		width: 239px;
+		height: 239px;
+		top: 0;
+		left: 0;
+		transform: translate(-72%,-35%);
+		border: 40px solid #ededee;
+		span {
+			width: 41px;
+			height: 41px;
+			@media (max-width: 576px) { width: 30px; height: 30px;}
+		}
+		@media (max-width: 1200px) { width: 170px; height: 170px; border-width: 30px;}
+		@media (max-width: 576px) {
+			width: 130px; 
+			height: 130px; 
+			border-width: 20px;
+			transform: translate(0,-40%);
+		}
+	}
+	/*Правая колонка - список свойств*/
+	&__right {
+		padding-top: 130px;
+		@media (max-width: 992px) { padding-top: 20px;}
+	}
+	/*Сам список*/
+	&__list { 
+		@media (max-width: 992px) {margin: 0 auto; max-width: 90%;}
+	}
+	/*Элемент списка*/
+	&__item {
+		max-width: 350px;
+		padding-left: 95px;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 42px;
+		color: #292121;
+		box-sizing: content-box;
+		position: relative;
+		&:not(:last-child) { margin-bottom: 46px;}
+		&::before {
+			content: '';
+			width: 63px;
+			height: 63px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: url('../img/icon-check.svg') center no-repeat;
+			background-size: 100% 100%;
+			@media (max-width: 992px) { width: 40px; height: 40px;}
+		}
+		@media (max-width: 992px) { 
+			max-width: 100%; 
+			padding-left: 60px;
+			&:not(:last-child) { margin-bottom: 20px;}
+		}
+		@media (max-width: 576px) { font-size: 24px; line-height: 32px;}
+	}
+}

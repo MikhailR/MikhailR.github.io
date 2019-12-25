@@ -1,0 +1,113 @@
+/*Секция "Как это будет происходить"*/ 
+.process {
+	background-color: #e5e5e5;
+	padding: 170px 0 140px;
+	@media (max-width: 992px) { padding: 100px 0 30px;}
+	&__head {
+		margin-left: 130px;
+		position: relative;
+		margin-bottom: 70px;
+		@media (max-width: 576px) { margin: 0 0 20px;}
+	}
+	/*Заголовок*/
+	&__title {
+		font-weight: 900;
+		font-size: 64px;
+		line-height: 1;
+		position: relative;
+		z-index: 10;
+		@media (max-width: 992px) { font-size: 50px;}
+		@media (max-width: 576px) { font-size: 36px;}
+	}
+	/*Элемент точка для этого блока*/
+	&__point {
+		width: 239px;
+		height: 239px;
+		top: 0;
+		left: 0;
+		transform: translate(-72%,-35%);
+		border: 40px solid #dfdfdf;
+		background-color: transparent;
+		span {
+			width: 41px;
+			height: 41px;
+			@media (max-width: 576px) { width: 30px; height: 30px;}
+		}
+		@media (max-width: 1200px) { width: 170px; height: 170px; border-width: 30px;}
+		@media (max-width: 576px) {
+			width: 130px; 
+			height: 130px; 
+			border-width: 20px;
+			left: 50%;
+			transform: translate(-50%,-60%);
+		}
+	}
+	/*Блок-жлемент списка шагов*/
+	&__item {
+		width: 825px;
+		margin-left: 190px;
+		display: flex;
+		&:not(:last-child) { 
+			margin-bottom: 50px;
+			@media (max-width: 992px) { margin-bottom: 30px;}
+		}
+		&:last-child {
+			.process__number::after { opacity: 0;}
+		}
+		@media (max-width: 1100px) {
+			width: 100%;
+			margin-left: 0;
+			padding-right: 10px;
+		}
+		@media (max-width: 576px) {
+			flex-direction: column;
+		}
+	}
+	/*Номер шага*/
+	&__number {
+		font-weight: 900;
+		font-size: 72px;
+		line-height: 1;
+		letter-spacing: -1px;
+		color: #d0d0d0;
+		margin-right: 16px;
+		position: relative;
+		/*Вертикальная черта*/
+		&::after {
+			content: '';
+			width: 90px;
+			height: 2px;
+			background: url('../img/icon-dashed.png') left center no-repeat;
+			background-size: auto 100%;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transform: rotate(90deg) translate(0,-50%);
+			filter: invert(0.1);
+			@media (max-width: 992px) { 
+				width: 60px; 
+				transform: rotate(90deg) translate(-10%,-20px);
+				margin-right: 0px;
+			}
+			@media (max-width: 576px) { 
+				display: none;
+			}
+		}
+		@media (max-width: 576px) { font-size: 50px;}
+	}
+	/*Название шага*/
+	&__subtitle {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1.1;
+		margin-bottom: 16px;
+		@media (max-width: 576px) { font-size: 24px;}
+	}
+	/*Описание шага*/
+	&__text {
+		font-size: 18px;
+		line-height: 1.4;
+		color: #828282;
+		margin-bottom: 6px;
+	}
+}

@@ -1,0 +1,212 @@
+/*Секция стратегий*/ 
+.strategy {
+	padding: 140px 0 112px;
+	text-align: center;
+	@media (max-width: 992px) { padding: 80px 0 50px;}
+	&__head {
+		display: inline-block;
+		position: relative;
+		@media (max-width: 1200px) { margin-left: 150px;}
+		@media (max-width: 768px) { margin-left: 100px;}
+		@media (max-width: 576px) { margin-left: 0;}
+	}
+	/*Заголовок*/
+	&__title {
+		width: 931px;
+		font-weight: 900;
+		font-size: 52px;
+		line-height: 1.2;
+		position: relative;
+		z-index: 10;
+		text-align: left;
+		@media (max-width: 1200px) { font-size: 44px; width: 100%;}
+		@media (max-width: 768px) { font-size: 36px;}
+		@media (max-width: 576px) { font-size: 28px;}
+	}
+	/*Элемент-точка для этого блока*/
+	&__point {
+		width: 185px;
+		height: 185px;
+		top: 0;
+		left: 0;
+		transform: translate(-70%,-30%);
+		border: 30px solid #ededee;
+		span {
+			width: 32px;
+			height: 32px;
+			@media (max-width: 576px) { width: 20px; height: 20px;}
+		}
+		@media (max-width: 1200px) { 
+			width: 150px; 
+			height: 150px; 
+			border-width: 30px;
+		}
+		@media (max-width: 576px) {
+			width: 110px; 
+			height: 110px; 
+			border-width: 20px;
+			left: 50%;
+			transform: translate(-50%,-70%);
+		}
+	}
+	/*Текст справа от заголовка*/
+	&__text {
+		width: 293px;
+		font-size: 24px;
+		line-height: 1.35;
+		text-align: left;
+		margin: -40px 180px 70px auto;
+		@media (max-width: 992px) { margin: 10px 0 40px auto;}
+	}
+	/*Блок с задачами (с иконками галочек)*/
+	&__block {
+		display: flex;
+		margin-bottom: 80px;
+		@media (max-width: 992px) { flex-wrap: wrap; margin-bottom: 40px;}
+	}
+	/*Сам элемент задачи*/
+	&__item {
+		flex: 0 1 25%;
+		max-width: 25%;
+		padding-right: 10px;
+		@media (max-width: 992px) { 
+			flex: 0 1 50%; 
+			max-width: 50%; 
+			margin-bottom: 20px;
+			padding-right: 20px;
+		}
+		@media (max-width: 576px) { 
+			flex: 0 1 100%; 
+			max-width: 100%; 
+		}
+	}
+	/*Иконка-галочка*/
+	&__icon {
+		width: 63px;
+		height: 63px;
+		margin-bottom: 16px;
+		img { display: block; width: 100%; height: 100%;}
+	}
+	/*Описание*/
+	&__description {
+		font-size: 18px;
+		line-height: 1.4;
+		color: #828282;
+		text-align: left;
+	}
+	/*Блок из 2-х частей: превью и описание стратегий*/
+	&__information {
+		display: flex;
+		@media (max-width: 992px) { flex-wrap: wrap;}
+	}
+	/*Блок с превью документов*/
+	&__preview {
+		flex: 0 1 445px;
+		max-width: 445px;
+		background-color: #f2f2f2;
+		padding: 16px 16px 0;
+		@media (max-width: 992px) { flex: 0 1 60%; max-width: 70%; margin: 0 auto 20px;}
+		@media (max-width: 768px) { flex: 0 1 100%; max-width: 100%;}
+	}
+	/*Блок с маленькими превьюшками*/
+	&__gallery { display: flex; margin-bottom: 5px;}
+	&__small {
+		flex: 0 1 25%;
+		max-width: 25%;
+		border: 4px solid transparent;
+		cursor: pointer;
+		transition-duration: 0.3s;
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		&:not(:last-child) { margin-right: 11px;}
+		&.active { border-color: #c4c4c4;}
+		&:hover, &:focus { box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+	}
+	/*Большое изображение*/
+	&__big {
+		width: 358px;
+		margin: 0 auto;
+		display: none;
+		@media (max-width: 480px) { width: 100%;}
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		&.active { display: block;}
+	}
+	/*Блок с описанием стратегий*/
+	&__content {
+		width: calc(100% - 445px);
+		padding-left: 50px;
+		text-align: left;
+		@media (max-width: 992px) { width: 100%;}
+		@media (max-width: 768px) { padding-left: 10px;}
+	}
+	/*Подзаголовок*/
+	&__subtitle {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 1.1;
+		margin-bottom: 30px;
+	}
+	/*Названия списков задач*/
+	&__stage1, &__stage2, &__stage3 {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 1.3;
+		margin-bottom: 10px;
+	}
+	/*Стили для пунктов списков задач*/
+	&__list1, &__list2, &__list3 { margin-bottom: 20px;}
+	&__list1 li, &__list2 li, &__list3 li {
+		font-size: 18px;
+		line-height: 1.3;
+		color: #828282;
+		margin-bottom: 8px;
+		padding-left: 30px;
+		position: relative;
+		&::before {
+			content: '';
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: #D90916;
+			position: absolute;
+			left: 12px;
+			top: 9px;
+		}
+	}
+	/*Кнопка*/
+	&__button {
+		width: 343px;
+		height: 47px;
+		background: linear-gradient(79deg, #BD0915 0.77%, #D90B18 98.79%);
+		border-radius: 8px;
+		margin-top: 31px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.2%;
+		color: #ffffff;
+		padding: 0 20px;
+		text-align: left;
+		position: relative;
+		box-shadow: 0px 7px 20px rgba(23, 0, 1, 0.3);
+		cursor: pointer;
+		transition-duration: 0.3s;
+		span { 
+			font-size: 24px; 
+			position: absolute;
+			right: 20px; 
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		&:hover, &:focus { box-shadow: 0px 7px 20px rgba(23, 0, 1, 0.6);}
+		&:active { box-shadow: 0px 7px 20px rgba(23, 0, 1, 0.9);}
+		@media (max-width: 768px) { margin-top: 10px;}
+		@media (max-width: 480px) { width: 100%;}
+	}
+}

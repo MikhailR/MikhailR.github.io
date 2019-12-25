@@ -1,0 +1,131 @@
+/*Блок №3. Привлечение клиентов*/ 
+.calling {
+	background-color: #E5E5E5;
+	padding: 140px 0;
+	@media (max-width: 1100px) { padding: 70px 0;}
+	/*Блок для заголовка и текста справа*/ 
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 1100px) { flex-direction: column;}
+	}
+	/*Большой заголовок вверху блока*/ 
+	&__title {
+		width: 620px;
+		font-weight: 900;
+		font-size: 52px;
+		line-height: 56px;
+		@media (max-width: 1100px) { width: 100%; margin-bottom: 20px;}
+		@media (max-width: 768px) { font-size: 40px; line-height: 44px;}
+	}
+	/*Текст справа от заголовка*/
+	&__text1 {
+		width: 350px;
+		font-size: 30px;
+		line-height: 40px;
+		@media (max-width: 1100px) { width: 100%;}
+		@media (max-width: 768px) { font-size: 24px; line-height: 30px;}
+	}
+	/*Блок для текста с элементом-точкой*/
+	&__center {
+		margin: 136px 0 89px;
+		text-align: center;
+		position: relative;
+		@media (max-width: 992px) { margin: 70px 0;}
+		@media (max-width: 768px) { margin: 80px 0 30px;}
+	}
+	/*Текст возле элемента с точкой*/
+	&__text2 {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 40px;
+		z-index: 10;
+		position: relative;
+		@media (max-width: 768px) { font-size: 24px; line-height: 28px;}
+	}
+	/*Элемент-точка для этого блока*/ 
+	&__point {
+		width: 185px;
+		height: 185px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-205%,-50%);
+		border: 30px solid #dfdfdf;
+		background-color: transparent;
+		span { width: 32px; height: 32px;}
+		@media (max-width: 768px) { 
+			width: 130px; 
+			height: 130px; 
+			border-width: 20px; 
+			transform: translate(-50%,-70%);
+		}
+		@media (max-width: 320px) { transform: translate(-50%,-80%);}
+	}
+	/*Блок с шагами 1, 2, 3*/
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 992px) {
+			flex-direction: column;
+		}
+	}
+	/*Описание каждого элемента (шага)*/
+	&__item {
+		flex: 0 1 33.333%;
+		max-width: 33.333%;
+		padding-right: 20px;
+		position: relative;
+		&:not(:last-child)::after {
+			content: '';
+			width: 70%;
+			height: 2px;
+			background: url('../img/icon-dashed.png') left center no-repeat;
+			background-size: auto 100%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			transform: translate(-10px,38px);
+			@media (max-width: 1100px) { width: 60%;}
+			@media (max-width: 992px) {
+				width: 50px;
+				left: 0;
+				top: 100%;
+				transform: translate(50px,40px) rotate(90deg);
+				filter: invert(0.5);
+			}
+			@media (max-width: 576px) { display: none;}
+		}
+		@media (max-width: 992px) { 
+			flex: 0 1 100%; 
+			max-width: 100%; 
+			min-height: 150px;
+			&:not(:last-child) {margin-bottom: 70px;}
+		}
+		@media (max-width: 576px) {
+			min-height: 200px;
+		 	&:not(:last-child) {margin-bottom: 30px;}
+		}
+	}
+	/*Номер шага*/
+	&__number {
+		display: inline-block;
+		font-weight: 900;
+		font-size: 72px;
+		line-height: 79px;
+		letter-spacing: -1px;
+		color: #d0d0d0;
+	}
+	/*Заголовок пункта*/
+	&__subtitle {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 33px;
+		margin-bottom: 16px;
+	}
+	/*Текст пункта*/
+	&__text3 {
+		font-size: 18px;
+		line-height: 25px;
+		color: #828282;
+	}
+}

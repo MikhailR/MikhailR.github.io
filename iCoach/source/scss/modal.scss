@@ -1,0 +1,196 @@
+/*Стили для модального окна с формой обратной связи*/ 
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 100;
+	&__wrap {
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		width: 50%;
+		min-width: 400px;
+		height: 470px;
+		background-color: #ffffff;
+		background: url('../img/rocket-man2-bg.jpg') center no-repeat;
+		background-size: auto 100%;
+		@media (max-width: 992px) { min-height: 430px;}
+		@media (max-width: 768px) { width: 80%;}
+		@media (max-width: 576px) { 
+			width: 70%; 
+			min-width: 280px;
+			min-height: 50vh;
+			max-height: 80vh;
+		}
+		&::after {
+			content: '';
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255,255,255,0.7);
+			box-shadow: inset 0 0 5px #000;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 150;
+		}
+	}
+	&__close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(50%,-50%);
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: #fff;
+		box-shadow: inset 0 0 5px #000;
+		cursor: pointer;
+		transition-duration: 0.3s;
+		span { 
+			font-size: 0;
+			&::before, &::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 20px;
+				height: 2px;
+				transition-duration: 0.5s;
+				background: linear-gradient(to right, #000 0%, #fff 50%, #000 100%);
+			}
+			&::before { transform: translate(-50%,-50%) rotate(45deg);}
+			&::after { transform: translate(-50%,-50%) rotate(-45deg);}
+		}
+		&:hover, &:focus {
+			background-color: red;
+			span::before { transform: translate(-50%,-50%) rotate(225deg);}
+			span::after { transform: translate(-50%,-50%) rotate(135deg);}
+		}
+	}
+	&__content {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 200;
+		padding: 80px 20px 20px;
+		@media (max-width: 576px) { padding-top: 60px;}
+	}
+	&__head {	position: relative;}
+	&__title {
+		position: relative;
+		z-index: 210;
+		font-weight: 900;
+		font-size: 28px;
+		line-height: 1.1;
+		margin-bottom: 30px;
+		text-align: center;
+		@media (max-width: 992px) { font-size: 22px;}
+		@media (max-width: 576px) { 
+			font-size: 20px; 
+			margin-bottom: 20px;
+		}
+	}
+	&__point {
+		width: 100px;
+		height: 100px;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%,-70%);
+		border: 15px solid rgba(0,0,0,0.1);
+		background-color: transparent;
+		span {
+			width: 20px;
+			height: 20px;
+			@media (max-width: 576px) { width: 15px; height: 15px;}
+		}
+		// @media (max-width: 992px) { width: 150px;	height: 150px;}
+		@media (max-width: 576px) {
+			width: 80px; 
+			height: 80px;
+			//border-width: 10px;
+			transform: translate(-50%,-60%);
+		}
+	}
+	&__form {
+		display: block;
+		width: 100%;
+	}
+	&__input {
+		width: 75%;
+		margin: 0 auto 10px;
+		// border: 1px solid #c5c5c5;
+		// border-radius: 5px;
+		//margin-bottom: 17px;
+		@media (max-width: 576px) { width: 100%;}
+		input { 
+			padding: 10px;
+			width: 100%;
+			border: 1px solid #c5c5c5;
+			border-radius: 5px;
+			color: #3c3939; 
+			letter-spacing: 1px; 
+			font-size: 18px;
+			&::-webkit-input-placeholder {color: #464646; letter-spacing: 0.7px;font-size: 14px;}
+			&::-moz-placeholder          {color: #464646; letter-spacing: 0.7px;font-size: 14px;}
+			&:-moz-placeholder           {color: #464646; letter-spacing: 0.7px;font-size: 14px;}
+			&:-ms-input-placeholder      {color: #464646; letter-spacing: 0.7px;font-size: 14px;}
+		}
+	}
+	&__text {
+		width: 75%;
+		margin: 0 auto;
+		@media (max-width: 576px) { width: 100%;}
+		textarea { 
+			padding: 10px;
+			width: 100%;
+			height: 80px;
+			border: 1px solid #c5c5c5;
+			border-radius: 5px;
+			color: #3c3939; 
+			letter-spacing: 1px; 
+			font-size: 18px;
+			resize: none;
+			overflow-y: auto;
+			//@media (max-width: 480px) { height: 100px;}
+			&::-webkit-input-placeholder {color: #464646; letter-spacing: 0.7px;font-size: 14px;}
+			&::-moz-placeholder          {color: #464646; letter-spacing: 0.7px;font-size: 14px;}
+			&:-moz-placeholder           {color: #464646; letter-spacing: 0.7px;font-size: 14px;}
+			&:-ms-input-placeholder      {color: #464646; letter-spacing: 0.7px;font-size: 14px;}
+		}
+	}
+	&__button {
+		cursor: pointer;
+		display: block;
+		margin: 15px auto 0;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.2;
+		letter-spacing: 2px;
+		color: #ffffff;
+		width: 75%;
+		padding: 13px 0;
+		background: linear-gradient(79deg, #BD0915 0.77%, #D90B18 98.79%);
+		box-shadow: 0px 10px 15px rgba(47, 11, 6, 0.4), inset 0 0 0 rgba(0,0,0,0);
+		border-radius: 8px;
+		transition: all 0.3s;
+		&:hover, &:focus { box-shadow: inset 0 0 15px rgba(0,0,0,0.6);}
+		&:active { box-shadow: inset 0px 0 15px rgba(0,0,0,1);}
+		&.disabled { 
+			pointer-events: none;
+			cursor: default;
+			background: #aaaaaa;
+			color: #666666;
+		}
+		@media (max-width: 576px) { width: 100%;}
+	}
+	&__error { color: red;}
+}

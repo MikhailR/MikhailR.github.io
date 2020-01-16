@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="LuxTrader - эксклюзивные лоты для продажи">
+	<meta name="keywords" content="LuxTrader, аукционная площадка, эксклюзивные лоты">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<title>LuxTrader</title>
+</head>
+<body>
+	<div class="wrapper" id="top">
+		<header class="header">	
+			<div class="container">
+				<div class="header__content">
+					<a class="header__logo" href="#">
+						<img src="img/logo.png" alt="Логотип компании">
+					</a>
+					<nav class="header__navigation">
+						<ul class="header__menu">
+							<li><a href="#top" class="header__link">главная</a></li>
+							<li><a href="#lots" class="header__link">аукцион</a></li>
+							<li><a href="#about" class="header__link">о проекте</a></li>
+							<li><a href="#partner" class="header__link">партнёрам</a></li>
+							<li><a href="#footer" class="header__link">контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header__settings">
+						<div class="header__language">
+							<a href="#" class="header__ru">ru</a>
+							<a href="#" class="header__en">en</a>
+						</div>
+						<a class="header__search" href="#">поиск</a>
+						<div class="header__form">
+							<form action="#" method="POST" class="search-form">
+								<label for="search">Поиск</label>
+								<input type="text" name="search" id="search" placeholder="Поиск" autocomplete="off">
+								<button type="submit" name="search-button">Найти</button>
+							</form>
+						</div>
+						<a class="header__user" href="#">Профиль пользователя</a>
+						<div class="user-menu">
+							<a href="#" class="user-menu__link">Выбор региона</a>
+							<a href="#" class="user-menu__link">Личный кабинет</a>
+							<a href="#" class="user-menu__link">Мои ставки</a>
+							<a href="#" class="user-menu__link">Мои лоты</a>
+						</div>
+					</div>
+					<div class="header__burger">
+						<a href="#" class="header__button">
+							<span class="header__line"></span>
+							<span class="header__line"></span>
+							<span class="header__line"></span>
+						</a>
+					</div>
+				</div>
+			</div>		
+		</header>
+
+		<main>
+			<section class="top">
+				<div class="top__slider">
+					<div class="top__slide ibg">
+						<img src="img/top-slide-1.jpg" alt="Первый слайд">
+					</div>
+					<div class="top__slide ibg">
+						<img src="img/top-slide-2.jpg" alt="Второй слайд">
+					</div>
+				</div>
+				<div class="top__content">
+					<div class="container">
+						<p class="top__subtitle section-subtitle">Только эксклюзивные</p>
+						<h1 class="top__main">Лоты под аукцион и свобоДную продажу</h1>
+						<p class="top__text">Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный и автоматизированный сервис по покупке и продаже, а также выставлению лотов на аукцион, предоставляем личные кабинеты, а также оказываем сопутствубщие услуги с продажей редких и дорогих вещей</p>
+						<button type="button" class="top__button button">присоединиться</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="lots" id="lots">
+				<div class="container">
+					<p class="lots__subtitle section-subtitle">Популярные</p>
+					<h2 class="lots__title section-title">лоты под аукцион</h2>
+					<div class="lots__devider section-devider">
+						<div class="section-devider__image">
+							<img data-src="img/icon-devider-lots.png" alt="Иконка разделителя в блоке">
+							<span class="section-devider__left"></span>
+							<span class="section-devider__right"></span>
+						</div>
+					</div>
+					<div class="lots__block">
+						<div class="lots__column">
+							<div class="lots__item">
+								<div class="lots__image ibg">
+									<img src="img/lots-image-1.jpg" alt="Картинка лота №1">
+								</div>
+								<div class="lots__counter">
+									<div class="lots__icon1">
+										<img data-src="img/icon-sandwatch.png" alt="Иконка песочных часов">
+									</div>
+									<p class="lots__time"><span class="lots__days1">3</span>:<span class="lots__hours1">2</span>:<span class="lots__minutes1">55</span>:<span class="lots__seconds1">15</span></p>
+								</div>
+								<p class="lots__name">Arnold & Son Worldtimer discovery of antarctica</p>
+								<div class="lots__info">
+									<div class="lots__left">
+										<div class="lots__icon2">
+											<img data-src="img/icon-eye.png" alt="Иконка просмотров">
+										</div>
+										<span class="lots__number">1 098</span>
+									</div>
+									<div class="lots__center">
+										<p class="lots__text1">Текущая ставка</p>
+										<p class="lots__text2">18 999 203</p>
+										<p class="lots__text3">&#8381;</p>
+									</div>
+									<div class="lots__right">
+										<div class="lots__icon2">
+											<img data-src="img/icon-palm.png" alt="Иконка ставок">
+										</div>
+										<span class="lots__number">75</span>
+									</div>
+								</div>
+								<button type="button" class="lots__button button">поднять ставку</button>
+							</div>
+						</div>
+						<div class="lots__column">
+							<div class="lots__item">
+								<div class="lots__image ibg">
+									<img src="img/lots-image-2.jpg" alt="Картинка лота №2">
+								</div>
+								<div class="lots__counter">
+									<div class="lots__icon1">
+										<img data-src="img/icon-sandwatch.png" alt="Иконка песочных часов">
+									</div>
+									<p class="lots__time"><span class="lots__days2">22</span>:<span class="lots__hours2">1</span>:<span class="lots__minutes2">45</span>:<span class="lots__seconds2">3</span></p>
+								</div>
+								<p class="lots__name">Chateau Lafite 1949</p>
+								<div class="lots__info">
+									<div class="lots__left">
+										<div class="lots__icon2">
+											<img data-src="img/icon-eye.png" alt="Иконка просмотров">
+										</div>
+										<span class="lots__number">756</span>
+									</div>
+									<div class="lots__center">
+										<p class="lots__text1">Текущая ставка</p>
+										<p class="lots__text2">245 050</p>
+										<p class="lots__text3">&#8381;</p>
+									</div>
+									<div class="lots__right">
+										<div class="lots__icon2">
+											<img data-src="img/icon-palm.png" alt="Иконка ставок">
+										</div>
+										<span class="lots__number">3</span>
+									</div>
+								</div>
+								<button type="button" class="lots__button button">поднять ставку</button>
+							</div>
+						</div>
+						<div class="lots__column">
+							<div class="lots__item">
+								<div class="lots__image ibg">
+									<img src="img/lots-image-3.jpg" alt="Картинка лота №3">
+								</div>
+								<div class="lots__counter">
+									<div class="lots__icon1">
+										<img data-src="img/icon-sandwatch.png" alt="Иконка песочных часов">
+									</div>
+									<p class="lots__time"><span class="lots__days3">9</span>:<span class="lots__hours3">20</span>:<span class="lots__minutes3">5</span>:<span class="lots__seconds3">28</span></p>
+								</div>
+								<p class="lots__name">Rolex Paul Newman Daytona</p>
+								<div class="lots__info">
+									<div class="lots__left">
+										<div class="lots__icon2">
+											<img data-src="img/icon-eye.png" alt="Иконка просмотров">
+										</div>
+										<span class="lots__number">126</span>
+									</div>
+									<div class="lots__center">
+										<p class="lots__text1">Текущая ставка</p>
+										<p class="lots__text2">3 245 000</p>
+										<p class="lots__text3">&#8381;</p>
+									</div>
+									<div class="lots__right">
+										<div class="lots__icon2">
+											<img data-src="img/icon-palm.png" alt="Иконка ставок">
+										</div>
+										<span class="lots__number">59</span>
+									</div>
+								</div>
+								<button type="button" class="lots__button button">поднять ставку</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="categories">
+				<div class="container">
+					<div class="categories__header">
+						<span class="categories__left"></span>
+						<div class="categories__center">
+							<h2 class="categories__title">все лоты</h2>
+						</div>
+						<span class="categories__right"></span>
+					</div>
+					<div class="categories__block">
+						<div class="categories__item">
+							<div class="categories__image">
+								<img data-src="img/category-image1.jpg" alt="Картинка категори №1">
+							</div>
+							<div class="categories__info">
+								<div class="categories__icon">
+									<img data-src="img/category-icon1.png" alt="Иконка категории №1">
+								</div>
+								<span class="categories__name">часы</span>
+								<span class="categories__pattern"></span>
+							</div>
+						</div>
+						<span class="categories__devider"><span class="categories__inner"></span></span>
+						<div class="categories__item">
+							<div class="categories__image">
+								<img data-src="img/category-image2.jpg" alt="Картинка категори №2">
+							</div>
+							<div class="categories__info">
+								<div class="categories__icon">
+									<img data-src="img/category-icon2.png" alt="Иконка категории №2">
+								</div>
+								<span class="categories__name">Ювелирные Изделия</span>
+								<span class="categories__pattern"></span>
+							</div>
+						</div>
+						<span class="categories__devider"><span class="categories__inner"></span></span>
+						<div class="categories__item">
+							<div class="categories__image">
+								<img data-src="img/category-image3.jpg" alt="Картинка категори №3">
+							</div>
+							<div class="categories__info">
+								<div class="categories__icon">
+									<img data-src="img/category-icon3.png" alt="Иконка категории №3">
+								</div>
+								<span class="categories__name">Автотранспорт и лодки</span>
+								<span class="categories__pattern"></span>
+							</div>
+						</div>
+						<span class="categories__devider"><span class="categories__inner"></span></span>
+						<div class="categories__item">
+							<div class="categories__image">
+								<img data-src="img/category-image4.jpg" alt="Картинка категори №4">
+							</div>
+							<div class="categories__info">
+								<div class="categories__icon">
+									<img data-src="img/category-icon4.png" alt="Иконка категории №4">
+								</div>
+								<span class="categories__name">аксессуары</span>
+								<span class="categories__pattern"></span>
+							</div>
+						</div>
+						<span class="categories__devider"><span class="categories__inner"></span></span>
+						<div class="categories__item">
+							<div class="categories__image">
+								<img data-src="img/category-image5.jpg" alt="Картинка категори №5">
+							</div>
+							<div class="categories__info">
+								<div class="categories__icon">
+									<img data-src="img/category-icon5.png" alt="Иконка категории №5">
+								</div>
+								<span class="categories__name">недвижимость</span>
+								<span class="categories__pattern"></span>
+							</div>
+						</div>
+						<span class="categories__devider"><span class="categories__inner"></span></span>
+						<div class="categories__item">
+							<div class="categories__image">
+								<img data-src="img/category-image6.jpg" alt="Картинка категори №6">
+							</div>
+							<div class="categories__info">
+								<div class="categories__icon">
+									<img data-src="img/category-icon6.png" alt="Иконка категории №6">
+								</div>
+								<span class="categories__name">hi-tech</span>
+								<span class="categories__pattern"></span>
+							</div>
+						</div>
+						<span class="categories__devider"><span class="categories__inner"></span></span>
+						<div class="categories__item">
+							<div class="categories__image">
+								<img data-src="img/category-image7.jpg" alt="Картинка категори №7">
+							</div>
+							<div class="categories__info">
+								<div class="categories__icon">
+									<img data-src="img/category-icon7.png" alt="Иконка категории №7">
+								</div>
+								<span class="categories__name">одежда и обувь</span>
+								<span class="categories__pattern"></span>
+							</div>
+						</div>
+						<span class="categories__devider"><span class="categories__inner"></span></span>
+						<div class="categories__item">
+							<div class="categories__image">
+								<img data-src="img/category-image8.jpg" alt="Картинка категори №8">
+							</div>
+							<div class="categories__info">
+								<div class="categories__icon">
+									<img data-src="img/category-icon8.png" alt="Иконка категории №8">
+								</div>
+								<span class="categories__name">предметы искусства</span>
+								<span class="categories__pattern"></span>
+							</div>
+						</div>
+						<span class="categories__devider"><span class="categories__inner"></span></span>
+						<div class="categories__item">
+							<div class="categories__image">
+								<img data-src="img/category-image9.jpg" alt="Картинка категори №9">
+							</div>
+							<div class="categories__info">
+								<div class="categories__icon">
+									<img data-src="img/category-icon9.png" alt="Иконка категории №9">
+								</div>
+								<span class="categories__name">алкоголь и еда</span>
+								<span class="categories__pattern"></span>
+							</div>
+						</div>
+						<span class="categories__devider"><span class="categories__inner"></span></span>
+					</div>
+				</div>
+			</section>
+
+			<section class="about" id="about">
+				<h2>Скрытый заголовок</h2>
+				<div class="container">
+					<div class="about__block">
+						<!-- Блок для фоновой картинки -->
+						<div class="about__image"></div>
+						<div class="about__info">
+							<p class="about__text">Мы рады приветствовать вас на уникальной Лакшери аукционе, здесь вы сможете найти достойные для себя лоты. Аукцион по продаже недвижимости во многих развитых странах являюется основным инструментом купли-продажи коммерческой, жилой, и муниципальной недвижимости, в том числе квартир. Общий объем сделок в мире на аукционах по продаже недвижимости варьируется от 30% до 80%. Для России аукцион недвижимости является относительно новым и обретает все большую популярность.</p>
+							<p class="about__text">Мы рады приветствовать вас на уникальной Лакшери аукционе, здесь вы сможете найти достойные для себя лоты. Аукцион по продаже недвижимости во многих развитых странах являюется основным инструментом купли-продажи коммерческой, жилой, и муниципальной недвижимости, в том числе квартир. Общий объем сделок в мире на аукционах по продаже недвижимости варьируется от 30% до 80%. Для России аукцион недвижимости является относительно новым и обретает все большую популярность.</p>
+							<p class="about__text">Муниципальной недвижимости, в том числе квартир. Общий объем сделок в мире на аукционах по продаже недвижимости варьируется от 30% до 80%.</p>
+						</div>
+					</div>
+				</div>				
+			</section>
+
+
+			<section class="services" id="partner">
+				<div class="container">
+					<p class="services__subtitle section-subtitle">Дополнительные</p>
+					<h2 class="services__title section-title">услуги</h2>
+					<div class="services__devider section-devider">
+						<div class="section-devider__image">
+							<img data-src="img/icon-devider-services.png" alt="Иконка разделителя в блоке">
+							<span class="section-devider__left"></span>
+							<span class="section-devider__right"></span>
+						</div>
+					</div>
+					<div class="services__block">
+						<div class="services__column">
+							<div class="services__item">
+								<div class="services__image">
+									<img data-src="img/services-1.png" alt="Иконка к услуге-1">
+								</div>
+								<h3 class="services__name">Экспертная оценка</h3>
+								<p class="services__description">Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный </p>
+								<button type="button" class="services__button">подробнее</button>
+							</div>
+						</div>	
+						<div class="services__column">
+							<div class="services__item">
+								<div class="services__image">
+									<img data-src="img/services-2.png" alt="Иконка к услуге-2">
+								</div>
+								<h3 class="services__name">заказ комплектующих</h3>
+								<p class="services__description">Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный </p>
+								<button type="button" class="services__button">подробнее</button>
+							</div>
+						</div>
+						<div class="services__column">
+							<div class="services__item">
+								<div class="services__image">
+									<img data-src="img/services-3.png" alt="Иконка к услуге-3">
+								</div>
+								<h3 class="services__name">ремонт и реставрациЯ</h3>
+								<p class="services__description">Мы собираем эксклюзивную публику и экслюзивные лоты, даем удобный </p>
+								<button type="button" class="services__button">подробнее</button>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</section>
+
+			<section class="quotes">
+				<div class="container">
+					<p class="quotes__subtitle section-subtitle">Интересные</p>
+					<h2 class="quotes__title section-title">цитаты</h2>
+					<div class="quotes__devider section-devider">
+						<div class="section-devider__image">
+							<img data-src="img/icon-devider-quotes.png" alt="Иконка разделителя в блоке">
+							<span class="section-devider__left"></span>
+							<span class="section-devider__right"></span>
+						</div>
+					</div>
+					<div class="quotes__slider">
+						<div class="quotes__slide-wrap">
+							<div class="quotes__slide">
+								<div class="quotes__image">
+									<img data-src="img/quotes-photo.png" alt="Фото автора цитаты">
+								</div>
+								<div class="quotes__info">
+									<p class="quotes__text">«Легче одурачить людей, чем убедить их в том, что они одурачены»</p>
+									<span class="quotes__author">Марк Твен</span>
+									<span class="quotes__author">1835 - 1910</span>
+								</div>
+							</div>
+						</div>
+						<div class="quotes__slide-wrap">
+							<div class="quotes__slide">
+								<div class="quotes__image">
+									<img data-src="img/quotes-photo.png" alt="Фото автора цитаты">
+								</div>
+								<div class="quotes__info">
+									<p class="quotes__text">«Легче одурачить людей, чем убедить их в том, что они одурачены»</p>
+									<span class="quotes__author">Марк Твен</span>
+									<span class="quotes__author">1835 - 1910</span>
+								</div>
+							</div>
+						</div>
+						<div class="quotes__slide-wrap">
+							<div class="quotes__slide">
+								<div class="quotes__image">
+									<img data-src="img/quotes-photo.png" alt="Фото автора цитаты">
+								</div>
+								<div class="quotes__info">
+									<p class="quotes__text">«Легче одурачить людей, чем убедить их в том, что они одурачены»</p>
+									<span class="quotes__author">Марк Твен</span>
+									<span class="quotes__author">1835 - 1910</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="quotes__icon">
+						<img data-src="img/quotes-icon.png" alt="Иконка под слайдером с цитатами">
+					</div>
+				</div>
+			</section>
+
+			<section class="contacts" id="news">
+				<div class="container">
+					<div class="contacts__info">
+						<div class="contacts__news">
+							<h2 class="contacts__title section-title">новости</h2>
+							<a href="#" class="contacts__item">
+								<span class="contacts__date">12.07.14</span>
+								<h3 class="contacts__name">Уникальной Лакшери аукционе, здесь вы сможете найти</h3>
+								<p class="contacts__text">Продажа товаров, ценных бумаг, имущества предприятий, произведений искусства и других объектов, которая...</p>
+							</a>
+							<a href="#" class="contacts__item">
+								<span class="contacts__date">28.09.15</span>
+								<h3 class="contacts__name">Достойные для себя лоты</h3>
+								<p class="contacts__text">Имущества предприятий, произведений искусства и других объектов, произведений редприятий, произведений искусств...</p>
+							</a>
+							<a href="#" class="contacts__item">
+								<span class="contacts__date">01.01.17</span>
+								<h3 class="contacts__name">Уникальной Лакшери аукционе, здесь вы сможете найти</h3>
+								<p class="contacts__text">Продажа товаров, ценных бумаг, имущества предприятий, произведений искусства и других объектов, которая...</p>
+							</a>
+						</div>
+						<div class="contacts__events">
+							<h2 class="contacts__title section-title">события</h2>
+							<a href="#" class="contacts__item">
+								<h3 class="contacts__name">Достойные для себя лоты</h3>
+								<p class="contacts__text">Имущества предприятий, произведений искусства и других объектов, произведений редприятий, произведений искусств Продажа товаров, ценных бумаг, имущества предприятий, произведений искусства и других объектов, которая...</p>
+							</a>
+							<a href="#" class="contacts__item">
+								<h3 class="contacts__name">Уникальной Лакшери аукционе, здесь вы сможете найти</h3>
+								<p class="contacts__text">Имущества предприятий, произведений искусства и других объектов, произведений редприятий, произведений искусств Продажа товаров, ценных бумаг, имущества предприятий, произведений искусства и других объектов, которая...</p>
+							</a>
+						</div>
+					</div>
+					<div class="contacts__subscribe">
+						<h2 class="contacts__title section-title">подписка</h2>
+						<div class="contacts__block">
+							<p class="contacts__description">Для получения уведомлений о новых предложениях, введите адрес своей электронной почты</p>
+							<form action="#" method="POST" class="contacts__form">
+								<div class="contacts__input">
+									<label for="email2">Почта</label>
+									<input type="email" name="email2" id="email2" placeholder="Ваш e-mail" required autocomplete="off">
+								</div>					
+								<button type="submit" class="contacts__button">ok<span></span></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>	
+
+		<footer class="footer" id="footer">	
+			<div class="container">
+				<div class="footer__block">
+					<div class="footer__copyright">
+						<a class="footer__logo" href="#">
+							<img src="img/logo.png" alt="Логотип компании">
+						</a>
+						<p class="footer__copy">Все права защищены © 2014</p>
+					</div>
+					<div class="footer__info">
+						<nav class="footer__navigation">
+							<ul class="footer__menu">
+								<li><a href="#top" class="footer__link">главная</a></li>
+								<li><a href="#lots" class="footer__link">аукцион</a></li>
+								<li><a href="#about" class="footer__link">о проекте</a></li>
+								<li><a href="#partner" class="footer__link">партнёрам</a></li>
+								<li><a href="#footer" class="footer__link">контакты</a></li>
+								<li><a href="#news" class="footer__link">новости</a></li>
+							</ul>
+						</nav>
+						<div class="footer__support">
+							<a href="#" class="footer__help">FAQ</a>
+							<a href="#" class="footer__help">реклама</a>
+							<a href="#" class="footer__help">соглашение</a>
+							<a href="#" class="footer__help">регистрация</a>
+							<a href="#" class="footer__help">услуги</a>
+						</div>
+					</div>
+					<div class="footer__phone">
+						<span class="footer__number1">+7</span>
+						<span class="footer__number2"> (495) 22-22-22</span>
+						<a href="#" class="footer__contact">Обратная связь</a>
+					</div>
+				</div>
+			</div>			
+		</footer>	
+
+		<div class="modal">
+			<div class="modal__wrap">
+				<button type="button" class="modal__close">
+					<span>close</span>
+				</button>
+				<h2 class="modal__title">Укажите Ваши контакты:</h2>
+				<form action="#" method="POST" class="modal__form">
+					<div class="modal__input">
+						<label for="name">Имя</label>
+						<input type="text" name="name" placeholder="Ваше имя" id="name" required autocomplete="off">
+						<div class="modal__error"></div>
+					</div>
+					<div class="modal__input">
+						<label for="email">Почта</label>
+						<input type="email" name="email" placeholder="Ваш Email" id="email" required autocomplete="off">
+						<div class="modal__error"></div>
+					</div>
+					<div class="modal__text">
+						<textarea name="message" placeholder="Сообщение"></textarea>
+					</div>
+					<button type="submit" class="modal__button disabled">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

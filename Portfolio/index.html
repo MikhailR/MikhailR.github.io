@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Portfolio">
+	<meta name="keywords" content="Portfolio, портфолио, моё портфолио, тестовое портфолио">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/animate.css" type="text/css">
+	<link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<title>Portfolio</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__top">
+				<div class="header__logo">
+					<img src="img/logo.png" alt="Логотип">
+				</div>
+				<div class="header__socials">
+					<a href="#" class="header__social"><img src="img/social-github.svg" alt="Иконка GitHub"></a>
+					<a href="#" class="header__social"><img src="img/social-twitter.svg" alt="Иконка Twitter"></a>
+					<a href="#" class="header__social"><img src="img/social-instagram.svg" alt="Иконка Instagram"></a>
+					<a href="#" class="header__social"><img src="img/social-facebook.svg" alt="Иконка Facbook"></a>
+				</div>
+			</div>
+			<div class="header__content">
+				<div class="header__info">
+					<span class="header__subtitle wow fadeIn" data-wow-duration="1s">Фрилансер</span>
+					<h1 class="header__title wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">Михаил Разуваев</h1>
+					<p class="header__description wow fadeIn" data-wow-duration="1s" data-wow-delay="1.4s">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина</p>
+					<button class="header__button button wow fadeIn" type="button" data-wow-duration="1s" data-wow-delay="2.1s">Бесплатная консультация</button>
+				</div>
+				<div class="header__photo wow flipInX" data-wow-duration="1s" data-wow-delay="2.5s"></div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="features">
+			<div class="container">
+				<h2 class="features__title section-title">Со мной удобно работать</h2>
+				<div class="features__block">
+					<div class="features__item wow fadeInDown" data-wow-duration="1.5s" data-wow-offset="150">
+						<div class="features__icon">
+							<img src="img/features-icon1.svg" alt="Иконка первого преимущества">
+						</div>
+						<h3 class="features__name">По договору</h3>
+						<p class="features__description">Предоставлю все документы для бухгалтерии: договоры, счета и акты. Работаю как ИП без НДС.</p>
+					</div>
+					<div class="features__item wow fadeInDown" data-wow-duration="1.5s" data-wow-offset="150">
+						<div class="features__icon">
+							<img src="img/features-icon2.svg" alt="Иконка второго преимущества">
+						</div>
+						<h3 class="features__name">Точно в срок</h3>
+						<p class="features__description">В договоре прописана моя  ответственность за срок проекта. Если просрочу — плачу неустойку. </p>
+					</div>
+					<div class="features__item wow fadeInDown" data-wow-duration="1.5s" data-wow-offset="150">
+						<div class="features__icon">
+							<img src="img/features-icon3.svg" alt="Иконка третьего преимущества">
+						</div>
+						<h3 class="features__name">Ценник под вас</h3>
+						<p class="features__description">Если у вас нетиповой проект, сделаю рассчет цены за работу и объясню, как складывается цена.</p>
+					</div>
+					<div class="features__item wow fadeInDown" data-wow-duration="1.5s" data-wow-offset="150">
+						<div class="features__icon">
+							<img src="img/features-icon4.svg" alt="Иконка четвёртого преимущества">
+						</div>
+						<h3 class="features__name">Премежуточные итоги</h3>
+						<p class="features__description">Показываю работу поэтапно, а не  в последий момент перед  крайним сроком.</p>
+					</div>
+					<div class="features__item wow fadeInDown" data-wow-duration="1.5s" data-wow-offset="150">
+						<div class="features__icon">
+							<img src="img/features-icon5.svg" alt="Иконка пятого преимущества">
+						</div>
+						<h3 class="features__name">Хостинг и домен </h3>
+						<p class="features__description">Если мы договорились о цене проекта, в неё входит всё: домен и хостинг на год + SSL сертификат.</p>
+					</div>
+					<div class="features__item wow fadeInDown" data-wow-duration="1.5s" data-wow-offset="150">
+						<div class="features__icon">
+							<img src="img/features-icon6.svg" alt="Иконка шестого преимущества">
+						</div>
+						<h3 class="features__name">Не брошу после сдачи</h3>
+						<p class="features__description">Научу вас или вашего сотрудника пользоваться сайтом, запишу видео-инструкции.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="projects">
+			<div class="container">
+				<h2 class="projects__title section-title">Последние проекты</h2>
+				<div class="swiper-container projects__slider">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide projects__slide">
+							<div class="projects__image">
+								<img src="img/icoach-image.jpg" alt="Картинка сайта 'iCoach'">
+							</div>
+							<div class="projects__info">
+								<h3 class="projects__name">Сайт для маркетинговой компании “iCoach”</h3>
+								<div class="projects__data">
+									<div class="projects__time">
+										<h4 class="projects__subtitle">Сроки</h4>
+										<span class="projects__text">5 рабочих дня</span>
+									</div>
+									<div class="projects__cost">
+										<h4 class="projects__subtitle">Стоимость</h4>
+										<span class="projects__text">10 000 рублей</span>
+									</div>
+									<div class="projects__feedback">
+										<h4 class="projects__subtitle">Отзыв клиента</h4>
+										<span class="projects__text">Мне понравилось работать с Михаил, потому что он все время был на связи и предлагал свои решения, когда мы заходили в тупик с дизайном. Мне нужны были закрывающие документы для бухгалтерии, и Михаил — тот редкий фрилансер, у которого с документами все в порядке</span>
+									</div>
+								</div>
+							</div>
+			      </div>
+			      <div class="swiper-slide projects__slide">
+			      	<div class="projects__image">
+								<img src="img/ecoforest-image.jpg" alt="Картинка сайта 'EcoForest'">
+							</div>
+							<div class="projects__info">
+								<h3 class="projects__name">Сайт для деревообрабатывающей компании “EcoForest”</h3>
+								<div class="projects__data">
+									<div class="projects__time">
+										<h4 class="projects__subtitle">Сроки</h4>
+										<span class="projects__text">1 рабочий день</span>
+									</div>
+									<div class="projects__cost">
+										<h4 class="projects__subtitle">Стоимость</h4>
+										<span class="projects__text">1 500 рублей</span>
+									</div>
+									<div class="projects__feedback">
+										<h4 class="projects__subtitle">Отзыв клиента</h4>
+										<span class="projects__text">Мне понравилось работать с Михаилом, потому что он все время был на связи и предлагал свои решения.</span>
+									</div>
+								</div>
+							</div>
+			      </div>
+			      <div class="swiper-slide projects__slide">
+			      	<div class="projects__image">
+								<img src="img/luxtrader-image.jpg" alt="Картинка сайта 'LuxTrader'">
+							</div>
+							<div class="projects__info">
+								<h3 class="projects__name">Сайт для аукционной площадки “LuxTrader”</h3>
+								<div class="projects__data">
+									<div class="projects__time">
+										<h4 class="projects__subtitle">Сроки</h4>
+										<span class="projects__text">3 рабочих дня</span>
+									</div>
+									<div class="projects__cost">
+										<h4 class="projects__subtitle">Стоимость</h4>
+										<span class="projects__text">5 000 рублей</span>
+									</div>
+									<div class="projects__feedback">
+										<h4 class="projects__subtitle">Отзыв клиента</h4>
+										<span class="projects__text">Михаил очень ответственно подошёл к выполнению проекта. Справился на отлично!</span>
+									</div>
+								</div>
+							</div>
+			      </div>
+			      <div class="swiper-slide projects__slide">
+			      	<div class="projects__image">
+								<img src="img/hexa-image.jpg" alt="Картинка сайта 'HEXA'">
+							</div>
+							<div class="projects__info">
+								<h3 class="projects__name">Сайт для дизайнерской студии “HEXA”</h3>
+								<div class="projects__data">
+									<div class="projects__time">
+										<h4 class="projects__subtitle">Сроки</h4>
+										<span class="projects__text">4 рабочих дня</span>
+									</div>
+									<div class="projects__cost">
+										<h4 class="projects__subtitle">Стоимость</h4>
+										<span class="projects__text">7 500 рублей</span>
+									</div>
+									<div class="projects__feedback">
+										<h4 class="projects__subtitle">Отзыв клиента</h4>
+										<span class="projects__text">Очень качественноая работа со стороны Михаила. Довольны сотрудничеством.</span>
+									</div>
+								</div>
+							</div>
+			      </div>
+			      <div class="swiper-slide projects__slide">
+			      	<div class="projects__image">
+								<img src="img/violet-image.jpg" alt="Картинка сайта 'Violet'">
+							</div>
+							<div class="projects__info">
+								<h3 class="projects__name">Сайт для компании “Violet”</h3>
+								<div class="projects__data">
+									<div class="projects__time">
+										<h4 class="projects__subtitle">Сроки</h4>
+										<span class="projects__text">4 рабочих дня</span>
+									</div>
+									<div class="projects__cost">
+										<h4 class="projects__subtitle">Стоимость</h4>
+										<span class="projects__text">3 000 рублей</span>
+									</div>
+									<div class="projects__feedback">
+										<h4 class="projects__subtitle">Отзыв клиента</h4>
+										<span class="projects__text">Отлично выполненный проект! Михаил показал себя профессионалом в своём деле.</span>
+									</div>
+								</div>
+							</div>
+			      </div>
+			    </div>
+			    <div class="projects__pagination"></div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<h2 class="footer__title section-title">Свяжитесь со мной</h2>
+			<div class="footer__block">
+				<div class="footer__subscribe wow fadeInLeft" data-wow-duration="2s" data-wow-offset="150">
+					<form action="#" class="footer__form form">
+						<h3 class="form__title">Можете просто оставить заявку, я позвоню вам сегодня</h3>
+						<input type="text" name="name" class="form__input form__input--name" placeholder="Ваше имя">
+						<input type="tel" name="phone" class="form__input form__input--phone" placeholder="Ваш телефон">
+						<button type="submit" class="form__button button">Бесплатная консультация</button>
+					</form>
+				</div>
+				<div class="footer__contacts contacts wow fadeInRight" data-wow-duration="2s" data-wow-offset="150">
+					<div class="contacts__phone">
+						<h4 class="contacts__title">Телефон</h4>
+						<a href="tel:79991234567" class="contacts__link">+7 999 123 45 67</a>
+					</div>
+					<div class="contacts__mail">
+						<h4 class="contacts__title">Почта</h4>
+						<a href="mailto:Rock.is.Life.352@gmail.com" class="contacts__link">Rock.is.Life.352@gmail.com</a>
+					</div>
+					<div class="contacts__networks">
+						<h4 class="contacts__title">Соцсети</h4>
+						<a href="#" class="contacts__link">t.me/Mills1985</a>
+						<a href="#" class="contacts__link">vk.me/Mills1985</a>
+						<a href="#" class="contacts__link">fb.me/Mills1985</a>
+					</div>
+					<div class="contacts__socials">
+						<a href="#" class="contacts__social"><img src="img/social-github.svg" alt="Иконка GitHub"></a>
+						<a href="#" class="contacts__social"><img src="img/social-twitter.svg" alt="Иконка Twitter"></a>
+						<a href="#" class="contacts__social"><img src="img/social-instagram.svg" alt="Иконка Instagram"></a>
+						<a href="#" class="contacts__social"><img src="img/social-facebook.svg" alt="Иконка Facbook"></a>
+					</div>
+					<a href="#" class="contacts__policy">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/wow.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
